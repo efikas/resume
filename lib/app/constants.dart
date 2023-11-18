@@ -32,17 +32,17 @@ const List<Map<String, dynamic>> certifications = [
 List<SkillModel> skills = [
   SkillModel(title: "Dart", imageUrl: "assets/images/dart.png", color: AppColors.green),
   SkillModel(title: "Flutter", imageUrl: "assets/images/flutter.png", color: AppColors.blue),
-  SkillModel(title: "Kotlin", imageUrl: "assets/images/flutter.png", color: AppColors.yellow),
-  SkillModel(title: "Swift", imageUrl: "assets/images/flutter.png", color: AppColors.purple),
-  SkillModel(title: "Java", imageUrl: "assets/images/flutter.png", color: AppColors.cyanAccent),
+  SkillModel(title: "Kotlin", imageUrl: "assets/images/kotlin.png", color: AppColors.yellow),
+  SkillModel(title: "Swift", imageUrl: "assets/images/swift.png", color: AppColors.purple),
+  SkillModel(title: "Java", imageUrl: "assets/images/java.png", color: AppColors.cyanAccent),
   SkillModel(title: "Javascript", imageUrl: "assets/images/js.png", color: AppColors.lightYellow),
-  SkillModel(title: "React", imageUrl: "assets/images/flutter.png", color: AppColors.brown),
-  SkillModel(title: "ReactNative", imageUrl: "assets/images/flutter.png", color: AppColors.green),
-  SkillModel(title: "PHP", imageUrl: "assets/images/flutter.png", color: AppColors.red),
-  SkillModel(title: "Laravel", imageUrl: "assets/images/flutter.png", color: AppColors.textBlue),
-  SkillModel(title: "Dart", imageUrl: "assets/images/flutter.png", color: AppColors.purple),
-  SkillModel(title: "Firebase", imageUrl: "assets/images/flutter.png", color: AppColors.lightPink),
-  SkillModel(title: "Solidity", imageUrl: "assets/images/flutter.png", color: AppColors.tileColor1),
+  SkillModel(title: "React", imageUrl: "assets/images/react.png", color: AppColors.brown),
+  SkillModel(title: "ReactNative", imageUrl: "assets/images/rn.png", color: AppColors.green),
+  SkillModel(title: "PHP", imageUrl: "assets/images/PHP.png", color: AppColors.red),
+  SkillModel(title: "Laravel", imageUrl: "assets/images/laravel.png", color: AppColors.textBlue),
+  SkillModel(title: "Dart", imageUrl: "assets/images/dart.png", color: AppColors.purple),
+  SkillModel(title: "Firebase", imageUrl: "assets/images/firebase.png", color: AppColors.lightPink),
+  SkillModel(title: "Solidity", imageUrl: "assets/images/solidity.jpeg", color: AppColors.tileColor1),
 ];
 
 List<ExperienceModel> experiences = [

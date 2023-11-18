@@ -7,35 +7,36 @@ class NameCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-  child: Column(
-    children: <Widget>[
-      Center(
-        child: Image(
-          image: AssetImage('assets/images/pic.png'),
-          height: 170,
-          width: 170,
+    return Column(
+      children: <Widget>[
+        Center(
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(100),
+            child: const Image(
+              image: AssetImage('assets/images/pic.jpeg'),
+              height: 150,
+              width: 150,
+            ),
+          ),
         ),
-      ),
-      Text(
-        "Abdullahi Lateef",
-        style: GoogleFonts.lato(
-          fontSize: 25,
-          color: AppColors.white,
-          fontWeight: FontWeight.bold,
+        Text(
+          "Abdullahi Lateef",
+          style: GoogleFonts.lato(
+            fontSize: 25,
+            color: AppColors.white,
+            fontWeight: FontWeight.bold,
+          ),
         ),
-      ),
-      Text(
-        "Frontend and Mobile App Developer",
-        style: GoogleFonts.lato(
-          fontSize: 18,
-          color: AppColors.darkBrown,
-          fontWeight: FontWeight.bold,
+        Text(
+          "Frontend and Mobile App Developer",
+          style: GoogleFonts.lato(
+            fontSize: 18,
+            color: AppColors.darkBrown,
+            fontWeight: FontWeight.bold,
+          ),
         ),
-      ),
-    ],
-  ),
-);
-;
+      ],
+    );
+    ;
   }
 }
