@@ -26,7 +26,10 @@ class GithubController extends ControllerMVC with FlushBarMixin {
     }
 
     try {
-      Map<String, dynamic> response = await githubRepo.getRepo();
+      dynamic response = await githubRepo.getRepo();
+      if(response.runtimeType is List){
+        model.repositoriesList = response as List<Map<String, dynamic>>;
+      }
 
       setState(() {
         model.isLoading = false;

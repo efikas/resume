@@ -2,9 +2,9 @@
 import 'package:resume/core/utils/services.dart';
 
 class GithubRepo with Services {
-  Future<Map<String, dynamic>> getRepo() async {
+  Future<dynamic> getRepo() async {
     try {
-      return apiGetRequests("orgs/efikas/repos");
+      return apiGetRequests("orgs/africastrategyadvisers/repos");
     } catch (e) {
       rethrow;
     }

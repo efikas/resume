@@ -41,10 +41,14 @@ class _RepoPageState extends StateMVC<RepoPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                ListTile(
-                  title: Text("A"),
-                )
-              ],
+                if(con.model.repositoriesList.isEmpty)
+                const Center(child: Text("This repository is empty")),
+                if(con.model.repositoriesList.isNotEmpty)
+                ...con.model.repositoriesList.map((item) {
+                return ListTile(
+                  title: Text(item["name"] ?? ""),
+                );
+              }).toList()],
             ),
           ),
         ),

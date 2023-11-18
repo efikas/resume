@@ -13,7 +13,8 @@ import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 mixin Services {
   static final Map<String, String> _requestHeaders = {
     'Content-Type': 'application/json',
-    'Accept': 'application/vnd.github+json',
+    'Accept': 'application/json',
+    // 'Accept': 'application/vnd.github+json',
     "X-GitHub-Api-Version": "2022-11-28",
   };
 
@@ -105,7 +106,7 @@ mixin Services {
     }
   }
 
-  Future<Map<String, dynamic>> apiGetRequests(String endPoint, {Map<String, dynamic>? header}) async {
+  Future<dynamic> apiGetRequests(String endPoint, {Map<String, dynamic>? header}) async {
     try {
       header ??= {};
       Dio dio = await getDio();
