@@ -10,7 +10,7 @@ const int CREATED = 201;
 
 // const String BOX_NAME = "resume";
 
-const String GIT_TOKEN = "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";
+const String GIT_TOKEN = "input token here";
 const String BASE_URL = "https://api.github.com/";
 
 const List<Map<String, String>> educations = [
